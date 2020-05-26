@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- отображать страницу в масштабе 100% -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script scr="https://kit.fontawesome.com/fe5438e1a9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="StyLE.css">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700.." rel="stylesheet">
+
+  <!-- добавляем лого на вкладку браузера -->
+  <link rel="shortcut icon" href="images/logo.png" type="image/png">
+
+  <title>Кюрасао</title>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="header__logo">
+
+                <img src="images/logo.png" alt="лого" border="0" width="100%">
+
+            </div>
+
+            <!-- НАВИГАЦИЯ ДЛЯ ДЕСКТОПА-->
+            <nav class="nav" style="font-size: 1.9vw;">
+              <a class="nav__link" href="#">Главная</a>
+              <a class="nav__link" href="#">О нас</a>
+              <a class="nav__link" href="#">Страны</a>
+              <a class="nav__link" href="#">Тест</a>
+              <a class="nav__link" href="#">Игра</a>
+              <a class="nav__link" href="#">Контакты</a>
+            </nav>
+
+            <!-- КНОПКА ДЛЯ МОБИЛЬНИКОВ-->
+
+            <div id="menu-toggle" class="menu-icon">
+                <div class="menu-icon-line"></div>
+            </div>
+
+            <!-- НАВИГАЦИЯ ДЛЯ МОБИЛЬНИКОВ-->
+            <div id="mobile_nav" class="mobile_nav">
+              <div class="mobile_nav_title">Меню</div>
+              <nav class="mobile_nav_list" style="font-size: 1.9vw;">
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">Главная</a></li>
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">О нас</a></li>
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">Страны</a></li>
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">Тест</a></li>
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">Игра</a></li>
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">Контакты</a></li>
+              </nav>
+            </div>
+        </div>
+    </div>
+
+  </header>
+
+  <script src="../js/menu.js"></script> <!--НЕ подключать скрипт ПЕРЕД хедером -->
+
+  <div class="level_1">
+      <div class="container_image" >
+          <div class="country_title" align="center" width="100%">Кюрасао</div>
+          <!--<img src="images/france.png" alt="франция" align="center" width="100%" >-->
+      </div>
+      <div class="text_1" >
+
+        Этот крошечный остров с кристально голубой водой когда-то был центром торговли для Карибского региона. Сегодня влияние французских, голландских и португальских торговцев можно почувствовать в местной кухне, архитектуре и культуре этого уникального острова. Провести время на нем можно на пляже, можно взять тур по историческим фортам или провести весь день предаваясь подводному плаванию в близлежащих коралловых рифах, которые привлекают дайверов со всего мира своей спокойной и чистой водой.
+
+      </div>
+  </div>
+
+  <!-- =========================================================================
+                               ДОСТОПРИМЕЧАТЕЛЬНОСТИ
+  ==============================================================================-->
+
+  <!--......................ПЕРВАЯ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ........................ -->
+
+  <div class="container1">
+        <div class="container__inner_image1">
+              <image src="images/curacao.jpg" width=100% class="round" alt="no_image"> <!-- class="round" для закругления фото -->
+        </div>
+
+        <div class="container__inner_text1">
+              <h1 class="inner2_head" align="center" >Протестантский культурный исторический музей</h1>
+              <div class="text"  ><br>Из красного дерева амвон, самая старая церковь и одно из самых старых зданий на острове,  датируется 1769 годом, бывшая протестантская церковь, а ныне Протестантский культурный исторический музей.
+              </div>
+        </div>
+  </div>
+
+  <br>  <br>
+
+   <!-- .......................ВТОРАЯ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ.......................... -->
+
+ <div class="container1">
+
+
+        <div class="container__inner_text2">
+              <h1 class="inner2_head" align="center"  >Пещеры Ато</h1>
+              <div class="text" ><br>Главной природной достопримечательностью Кюрасао, конечно после яркого солнца и восхитительного моря, являются пещеры Ато. Пещеры около 240 метров в длину, образовались в коралловом известняке благодаря карстовым процессам. Первыми известными жителями пещеры были индейские араваки, около 1500 лет назад. Они оставили множество петроглифов (наскальные рисунки). Во времена рабства, беглые рабы использовали пещеры в качестве укрытий. Также в пещере живет редкая колония летучих мышей.
+              </div>
+        </div>
+
+        <div class="container__inner_image2">
+              <image src="images/Curacao_Hato-Caves_C2000_012_0.jpg" width=100% class="round" alt="no_image">
+        </div>
+
+  </div>
+
+   <!--===========================================================================
+                                    КОММЕНТАРИИ
+    ==============================================================================-->
+   <div class="container_for_comments">
+       <div class="container__inner_comms">
+            <div class="text_comms"  align="center">
+              Вы можете добавить свои фотографии после путешествия в альбом
+            </div>
+        </div>
+
+        <div class="com_image">
+            <a href="https://vk.com"> <img src="images/album.jpg" width="100%" align="left" alt="альбом" border="0" ></a>
+        </div>
+  </div>
+
+</body>
+</html>
+</html>
