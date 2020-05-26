@@ -1,6 +1,12 @@
-
-
-
+.solution{
+    color: #333;
+    text-decoration: none;
+    transition: color .2s linear;
+  }
+  
+  .solution:hover{
+    color:#ff7474;
+  }
 
 
 .level1 {
