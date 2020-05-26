@@ -1,0 +1,464 @@
+body{
+  font-family: 'EB Garamond', serif;
+  margin: 0 0;
+  font-size: 15px;
+}
+
+*,
+*:before,
+*:after{
+  box-sizing: border-box;
+ }
+
+/*==========================Навигация===========================================
+===============================================================================*/
+.header{
+  /*overflow: hidden; /*элементы, выходящие за хедер, не создадут боковую прокрутку*/
+
+  width: 100%;
+  height: auto;
+
+  position: fixed; /*!!!!!!!*/
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  background-color: #f7e9e2; /*#ffdacd #f7e9e2 */
+}
+
+.container{
+  width: 85%;
+  margin: 0 auto;
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+.header__logo{
+  width: 5%;
+  height: auto;
+}
+
+.nav{
+  display: flex;
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+  top: 5px;
+}
+
+.nav__link{
+  vertical-align: top;
+  margin-left: 50px;
+
+  color: #333;
+  text-decoration: none;
+  transition: color .2s linear;
+}
+
+.nav__link:hover{
+  color:#ff7474;
+}
+
+/*======================== ПЕРВАЯ СТРАНИЦА============================
+=====================================================================*/
+
+.level_1{
+  display: flex;
+  flex-direction: column;
+
+  height: auto;
+  width: 100%;
+  margin-top: 0;
+
+  padding-top: 9%;/*отступили от header*/
+
+  background: url("images/nebo.jpg") center no-repeat;
+  background-size: cover; /* чтобы картинка занимала ВЕСЬ блок*/
+}
+
+
+.container_image{ /*теперь это надпись*/
+  margin: 0 5% 0 5%;
+}
+.country_title{
+  color: #333;
+
+  text-shadow: 1px 1px white,
+               2px 2px #777;
+  color: #333;
+
+  font-size:12.5vw;
+}
+
+
+.text_1{
+  padding-top: 5%; /*отступили от container_image*/
+
+  font-family: 'Open Sans';
+  border: 0;
+  text-align: center;
+
+  width: 50%;
+  margin: 0 auto;   /* эти штуки выровняли блок по центру, теперь <br> не нужен*/
+
+  padding-bottom: 27%;
+
+  font-size:1.7vw;
+}
+
+/*=========================ДОСТОПРИМЕЧАТЕЛЬНОСТИ================================
+==============================================================================*/
+h1{
+  font-family: 'EB Garamond', serif;
+  margin: 0;
+  font-size:2.1vw;
+
+}
+.text{
+
+  font-size: 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:1.5vw; /*ОНО РАБОТАЕТ*/
+
+}
+  .round {
+      border-radius: 50%;
+     }
+                                 /*закругляем фотографии*/
+.inner2_head{
+
+      text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+      }
+
+/* ////////////////////////////////////////*/
+.container1{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      width: 100%;
+      height: auto;
+
+      }
+/* ////////////////////////////////////////*/
+.container__inner_image1{
+      display: flex;
+      margin: auto 0 auto 7%;
+      width: 50%;
+      height: auto;
+      }
+
+/* ////////////////////////////////////////*/
+.container__inner_text1{
+      /*background-color: #FFFF; /*задание цвета самого контейнера*/
+      /*box-shadow: inset 0px 0px 35px 35px #7FFFD4; /*размытие границ у текста + задание цвета*/
+
+      padding: 3% 3% 6% 3%;
+      display: flex;
+      flex-direction: column;
+      margin: auto 7% auto auto;
+
+      width: 50%;
+      height: auto;
+      }
+
+.container__inner_text2{
+      /*background-color: #FFDAB9; /*задание цвета самого контейнера*/
+      /*box-shadow: inset 0px 0px 35px 35px #fff; /*размытие границ у текста + задание цвета*/
+
+      padding: 3% 3% 6% 3%;
+      display: flex;
+      flex-direction: column;
+      margin: auto 0 auto 7%;
+
+      width: 50%;
+      height: auto;
+      }
+
+.container__inner_image2{
+      display: flex;
+      margin: auto 7% auto 0;
+      width: 50%;
+      height: auto;
+      }
+
+/*==============================КОММЕНТАРИИ=====================================
+==============================================================================*/
+.container_for_comments{
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  width: 100%;
+  height: auto;
+  margin: 0 0 0 0;
+
+  margin: 3% 0 0 0;
+  padding-top: 15%;  /*отступили от достопримечательностей*/
+
+  /*нижняя фоновая картинка*/
+  background: url("images/3.jpg") center no-repeat;
+
+  background-size: cover;
+  box-shadow: inset 0px 0px 8vw 8vw #fff;
+  position: absolute;
+}
+
+.container__inner_comms{
+  display: flex;
+
+  padding: 3% 3% 5% 3%;
+  flex-direction: row;
+  margin: auto 0 auto 10%;
+
+  width: 100%;
+  height: auto;
+}
+
+.text_comms{
+  font-weight: 700;
+  font-size: 20px;
+  font-family: 'EB Garamond', sans-serif;
+  padding-bottom: 30%;
+
+  font-size:2.4vw;
+
+  /*это неоновая тень для текста, у каждой картинки нужно будет заменять #ed9ba9 на основной цвет картинки с помощью пипетки*/
+  text-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white, 0 0 20px #fab455, 0 0 35px #6a5b40, 0 0 40px #f0a73d, 0 0 50px #c4d9cb, 0 0 75px #5a5b7b;
+}
+
+.com_image{
+  display: flex;
+  margin: 0 8% 5% 5%;
+
+  width: 65%;
+  height: auto;
+
+  box-shadow: -0.6vw 0.6vw 1.5vw #333;
+}
+
+/*==============================================================================
+                              МЕНЮ ДЛЯ МОБИЛЬНИКОВ
+=================================================================================*/
+/*............................кнопка для мобильников..........................*/
+.menu-icon{
+  z-index: 19;
+
+  display: none;
+
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+
+.menu-icon-line{
+
+  position: absolute;
+  width: 5vw;
+  height: 0.5vw;
+  background-color: #333;
+
+  transition: background-color 0.4s ease-in;
+}
+
+.menu-icon-line::before{
+  position: absolute;
+  content: '';
+
+  top: -1.2vw;
+
+  left: 0;
+
+  width: 5vw;
+  height: 0.5vw;
+  background-color: #333;
+
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+ }
+.menu-icon-line::after{
+  position: absolute;
+  content: '';
+
+  top: 1.2vw;
+  left: 0;
+
+  width: 5vw;
+  height: 0.5vw;
+  background-color: #333;
+
+  transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+ }
+
+.menu-icon.menu-icon-active .menu-icon-line{
+  background-color: transparent;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::before{
+  transform: rotate(45deg);
+  top: 0;
+
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+.menu-icon.menu-icon-active .menu-icon-line::after{
+  transform: rotate(-45deg);
+  top: 0;
+
+  transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+}
+
+/*............................навигация для мобильников..........................*/
+.mobile_nav{
+  z-index: 9;
+  display: block;
+  position: absolute; /*в хедере не прописан position: relative; все баги с меню могут быть из-за этого*/
+  right: -55%;
+  top: 0;
+  height: auto; /*!!!!!*/
+  width: 55%;
+  background-color: rgba(247, 233, 226, 0.9);
+  padding-left: 5%;
+
+  transition: transform 0.3s linear;
+}
+
+.mobile_nav_active{
+  transform: translateX(-100%);
+}
+
+.mobile_nav_title{
+  font-size: 7vw;
+  font-weight: 600;
+}
+
+.mobile_nav_list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 8% 0;
+
+}
+.mobile_nav_item{
+  margin-top: 5%;/*!!!!!*/
+
+}
+
+.mobile_nav__link{
+  color: #333;
+  text-decoration: none;
+  font-size: 6vh;/*!!!!!*/
+
+  transition: color .2s linear;
+}
+
+.mobile_nav__link:hover{
+color:#ff7474;
+}
+
+/*==============================================================================
+
+                                  МЕДИА
+
+================================================================================*/
+@media (max-width: 1160px){
+
+    *{
+      box-sizing: border-box;
+     }
+     .header__logo{
+       width: 10%;
+       height: auto;
+     }
+    .nav{
+      display: none; /*скрываем слова навигации*/
+    }
+    .menu-icon{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+    }
+
+    .container_image{ /*теперь это надпись*/
+      margin: 0 0;
+    }
+
+
+      /* ///////////////////////////////////////////////////////////////
+                            ДОСТОПРИМЕЧАТЕЛЬНОСТИ
+      //////////////////////////////////////////////////////////////*/
+    .round {
+        border-radius: 50%;
+       }                            /*убираем закругление*/
+
+    .container1{
+          display: flex;
+          flex-direction: column;
+
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+
+          width: 100%;
+          height: auto;
+
+          }
+    /* ////////////////////////////////////////*/
+    .container__inner_image1{
+          display: flex;
+          width: 75%;
+          height: auto;
+          align-items: center;
+
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+          }
+    .container__inner_image2{
+          display: flex;
+          width: 75%;
+          height: auto;
+          align-items: center;
+
+          margin: 0 0 0 0;
+          padding: 0 0 0 0;
+          }
+
+    /* ////////////////////////////////////////*/
+    .container__inner_text1{
+
+          display: flex;
+
+          width: 100%;
+          height: auto;
+
+          margin: 0 0 0 0;
+          padding: 3% 10%;
+          text-align: center;
+
+          }
+      .container__inner_text2{
+
+            display: flex;
+
+            width: 100%;
+            height: auto;
+
+            margin: 0 0 0 0;
+            padding: 3% 10%;
+            text-align: center;
+            }
+
+/*........настройка текстового для мобильных приложений........*/
+      .country_title{font-size:15vw;}
+      .text_1{
+        font-size:4.8vw;
+        width: 70%;}
+
+      h1{font-size:6vw;}
+      .text{font-size: 4.3vw;}
+      .text_comms{font-size:5vw;}
+
+}
