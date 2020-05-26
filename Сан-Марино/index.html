@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+
+  <!-- отображать страницу в масштабе 100% -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script scr="https://kit.fontawesome.com/fe5438e1a9.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,700.." rel="stylesheet">
+
+  <!-- добавляем лого на вкладку браузера -->
+  <link rel="shortcut icon" href="images/logo.png" type="image/png">
+
+  <title>Сан-Марино</title>
+
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="header__logo">
+
+                <img src="images/logo.png" alt="лого" border="0" width="100%">
+
+            </div>
+
+            <!-- НАВИГАЦИЯ ДЛЯ ДЕСКТОПА-->
+            <nav class="nav" style="font-size: 1.9vw;">
+              <a class="nav__link" href="#">Главная</a>
+              <a class="nav__link" href="#">О нас</a>
+              <a class="nav__link" href="#">Страны</a>
+              <a class="nav__link" href="#">Тест</a>
+              <a class="nav__link" href="#">Игра</a>
+              <a class="nav__link" href="#">Контакты</a>
+            </nav>
+
+            <!-- КНОПКА ДЛЯ МОБИЛЬНИКОВ-->
+
+            <div id="menu-toggle" class="menu-icon">
+                <div class="menu-icon-line"></div>
+            </div>
+
+            <!-- НАВИГАЦИЯ ДЛЯ МОБИЛЬНИКОВ-->
+            <div id="mobile_nav" class="mobile_nav">
+              <div class="mobile_nav_title">Меню</div>
+              <nav class="mobile_nav_list" style="font-size: 1.9vw;">
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">Главная</a></li>
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">О нас</a></li>
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">Страны</a></li>
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">Тест</a></li>
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">Игра</a></li>
+                <li class="mobile_nav_item"><a class="mobile_nav__link" href="#">Контакты</a></li>
+              </nav>
+            </div>
+        </div>
+    </div>
+
+  </header>
+
+  <script src="../js/menu.js"></script> <!--НЕ подключать скрипт ПЕРЕД хедером -->
+
+  <div class="level_1">
+      <div class="container_image" >
+          <div class="country_title" align="center" width="100%">Сан-Марино</div>
+          <!--<img src="images/france.png" alt="франция" align="center" width="100%" >-->
+      </div>
+      <div class="text_1" >
+
+        Крохотное государство в Италии, представляющий собой уютный оазис свободы. Многие называют его горой, которой удалось стать целой республикой. Сложно поверить, но на достаточно небольшой площади, составляющей чуть больше 60 км2, умещается немало чего интересного. Достопримечательности Сан-Марино будут интересны любому путешественнику, решившему познакомиться с итальянскими землями.
+
+      </div>
+  </div>
+
+  <!-- =========================================================================
+                               ДОСТОПРИМЕЧАТЕЛЬНОСТИ
+  ==============================================================================-->
+
+  <!--......................ПЕРВАЯ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ........................ -->
+
+  <div class="container1">
+        <div class="container__inner_image1">
+              <image src="images/sight1.jpg" width=100% class="round" alt="no_image"> <!-- class="round" для закругления фото -->
+        </div>
+
+        <div class="container__inner_text1">
+              <h1 class="inner2_head" align="center" >Гора Монте-Титано</h1>
+              <div class="text"  ><br>Самая высокая точка Сан-Марино, находящаяся в определенной части Апеннин. Над уровнем моря гора возвышается на 740 м, а стоит она в центральной части столицы карликового государства. Не знаете, куда сходить в Сан-Марино? Попробуйте покорить описываемую высоту. Там вы увидите фортификационные башни, старинные ворота, стены, бастионы. С самой высокой точки можно осмотреть не только страну, в которой находится гора, но и расположенные по соседству.
+              </div>
+        </div>
+  </div>
+
+  <br>  <br>
+
+   <!-- .......................ВТОРАЯ ДОСТОПРИМЕЧАТЕЛЬНОСТЬ.......................... -->
+
+ <div class="container1">
+
+
+        <div class="container__inner_text2">
+              <h1 class="inner2_head" align="center"  >Парк приключений (San Marino Adventures)</h1>
+              <div class="text" ><br>Есть в республике интересные места и для любителей активного отдыха. Речь идет об обширной зоне отдыха, где есть много места для организации пикников. Взрослым и детям не могут не понравиться веревочные парки, для покорения которых потребуется выносливость и сноровка. Отправляйтесь в парк приключений и позвольте себе погрузиться в мир покорения вершин, преодоления трудностей.
+              </div>
+        </div>
+
+        <div class="container__inner_image2">
+              <image src="images/sight2.jpg" width=100% class="round" alt="no_image">
+        </div>
+
+  </div>
+
+   <!--===========================================================================
+                                    КОММЕНТАРИИ
+    ==============================================================================-->
+   <div class="container_for_comments">
+       <div class="container__inner_comms">
+            <div class="text_comms"  align="center">
+              Вы можете добавить свои фотографии после путешествия в альбом
+            </div>
+        </div>
+
+        <div class="com_image">
+            <a href="https://vk.com"> <img src="images/album.jpg" width="100%" align="left" alt="альбом" border="0" ></a>
+        </div>
+  </div>
+
+</body>
+</html>
+</html>
