@@ -62,7 +62,7 @@ footer :hover {
   color:#ff7474;
 }
 
-.button{
+input[type="button"] {
     display: none;
 }
 
