@@ -108,6 +108,7 @@
     text-align: center;
     font-family: EB Garamond;
     border: 1px solid #999999;
+    cursor: pointer;
 }
 
 .btn-primary:focus{
