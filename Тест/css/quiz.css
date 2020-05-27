@@ -273,7 +273,7 @@ footer h2 {
     z-index: 9;
     display: block;
     position: absolute; /*в хедере не прописан position: relative; все баги с меню могут быть из-за этого*/
-    right: -55%;
+    right: -60%;
     top: 0;
     height: auto; /*!!!!!*/
     width: 55%;
