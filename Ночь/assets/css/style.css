@@ -1,6 +1,14 @@
-
-
-
+.res{
+    color: #fff;
+    text-decoration: none;
+    transition: color .2s linear;
+    text-decoration: underline;
+  }
+  
+  .res:hover{
+    color:#ff7474;
+    text-decoration: underline;
+  }
 
 
 .level1 {
