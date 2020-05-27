@@ -609,7 +609,7 @@ margin-left: 30px;
   
     width: 5vw;
     height: 0.5vw;
-    background-color: #333333;
+    background-color: #ffffff;
   
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
    }
@@ -622,7 +622,7 @@ margin-left: 30px;
   
     width: 5vw;
     height: 0.5vw;
-    background-color: #333333;
+    background-color: #ffffff;
   
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
    }
@@ -654,7 +654,7 @@ margin-left: 30px;
     top: 0;
     height: auto; /*!!!!!*/
     width: 55%;
-    background-color: rgba(247, 233, 226, 0.9);
+    background-color: rgba(23, 52, 121, 0.9);
     padding-left: 5%;
   
     transition: transform 0.3s linear;
@@ -668,7 +668,7 @@ margin-left: 30px;
     font-family: EB Garamond;
     font-size: 7vw;
     font-weight: 600;
-    color: #333333;
+    color: #ffffff;
   }
   
   .mobile_nav_list{
@@ -683,7 +683,7 @@ margin-left: 30px;
   
   .mobile_nav__link{
     font-family: EB Garamond;
-    color: #333;
+    color: #ffffff;
     text-decoration: none;
     font-size: 6vh;/*!!!!!*/
   
