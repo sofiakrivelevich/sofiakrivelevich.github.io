@@ -81,6 +81,8 @@ main {
     max-width: 600px;
     display: block;
     margin: 10px auto;
+    width: 100%;
+    height: auto;
 }
 
 .reload-button {
