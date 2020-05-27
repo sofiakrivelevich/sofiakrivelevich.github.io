@@ -1,11 +1,13 @@
-.solution{
+.res{
     color: #333;
     text-decoration: none;
     transition: color .2s linear;
+    text-decoration: underline;
   }
   
-  .solution:hover{
+  .res:hover{
     color:#ff7474;
+    text-decoration: underline;
   }
 
 
