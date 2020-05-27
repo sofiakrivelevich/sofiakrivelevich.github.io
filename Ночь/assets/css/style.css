@@ -609,7 +609,7 @@ margin-left: 30px;
   
     width: 5vw;
     height: 0.5vw;
-    background-color: #ffffff;
+    background-color: #333333;
   
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
    }
@@ -622,7 +622,7 @@ margin-left: 30px;
   
     width: 5vw;
     height: 0.5vw;
-    background-color: #ffffff;
+    background-color: #333333;
   
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
    }
