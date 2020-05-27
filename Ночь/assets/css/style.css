@@ -1,11 +1,11 @@
-.res{
+.res1{
     color: #fff;
     text-decoration: none;
     transition: color .2s linear;
     text-decoration: underline;
   }
   
-  .res:hover{
+  .res1:hover{
     color:#ff7474;
     text-decoration: underline;
   }
