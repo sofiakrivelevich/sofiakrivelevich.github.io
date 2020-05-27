@@ -1,0 +1,324 @@
+body{
+    font-family: 'EB Garamond', serif;
+    margin: 0;
+    font-family: 'Tahoma';
+    font-size: 15px;
+    line-height: 1, 6;
+    color: #FBFBFB;
+    background-color: #333333;
+    background-image: url(../images/night.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1920px;
+}
+*,
+*:before,
+*:after
+{
+    box-sizing: border-box;
+}
+h1,h2,h3{
+    margin: 0;
+}
+
+/*Container*/
+.container{
+    width: 100%;
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
+.level1 {
+border-top: 50px;
+font-family: EB Garamond;
+background-image: url(../images/NEBO.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+max-width: 1920px;
+}
+
+.header {
+width: 100%;
+height: 10%;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+background-size: cover;
+background-image: url(../images/ros.png);
+display: inline-block;
+}
+
+@font-face {
+font-family: Josefin Sans;
+/* Гарнитура шрифта */
+src: url(fonts/josefin-sans_[allfont.ru].ttf);
+/* Путь к файлу со шрифтом */
+}
+
+.header_inner {
+display: flex;
+justify-content: space-between;
+align-items: center;
+background-size: cover;
+}
+
+
+.nav {
+font-family: Tahoma;
+font-size: 40px;
+float: right;
+position: fixed;
+right: 0px;
+background-size: cover;
+
+}
+
+.nav_link {
+display: inline-block;
+vertical-align: top;
+color: #FBFBFB;
+margin: 30px;
+margin-top: 0px;
+text-decoration: none;
+float: right;
+background-size: cover;
+}
+
+.nav_link:hover {
+
+color: #FF7474;
+
+}
+
+.polet {
+display: flex;
+justify-content: center;
+background-size: cover;
+margin-top: -250px;
+margin-bottom: 150px;
+}
+
+.text1 {
+font-size: 40px;
+font-family: Segoe UI;
+text-align: center;
+background-size: cover;
+background-color: #FBFBFB;
+}
+
+/*Why*/
+.why_image{
+    float: left;
+    margin: 0 0 5px 5px;
+}
+
+.why_title{
+    margin-top: 200px;
+    padding: 80px;
+    font-size: 50px;
+}
+
+.why_inf1{
+    padding: 25px;
+    display: flex;
+}
+
+.why_inf2{
+    display: flex;
+}
+
+.why_inf3{
+    display: flex;
+}
+
+.why_inf4{
+    display: flex;
+}
+
+.why_text{
+    margin-top: 40px;
+    margin-left: 10px;
+    font-size: 36px;
+}
+
+/*Mask*/
+.mask_tel{
+margin-top: -250px;
+margin-right: 100px;
+}
+
+.mask_text{
+    font-size: 36px;
+    text-align: center;
+    margin-top: 380px;
+    position: relative;
+}
+
+.mask_button{
+    position: absolute;
+    margin-top: 70px;
+    margin-left: 500px;
+}
+    
+
+/* Intro */
+.intro
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #fbfbfb;
+    margin-bottom: 0px;
+}
+
+.intro_inner
+{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.intro_title
+{
+    margin-top: 100px;
+    color: #fbfbfb;
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.intro_text
+{
+    font-size: 36px;
+    color: #FBFBFB;
+}
+
+.people{
+    display: block;
+    margin-top: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*Contacts*/
+.contacts{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: url("../images/mountains.png")center
+    no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 1900px;
+    height: 710px;
+    margin-top: 150px;
+    transition: background-color 0.2s linear;
+}
+
+.contacts_title{
+    font-size: 80px;
+    color: #FBFBFB;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.contacts_suptitle{
+    position: absolute;
+    font-size: 50px;
+    color: #FBFBFB;
+    margin-top: 150px;
+    margin-left: 470px;
+}
+
+.cont_link1{
+    position: absolute;
+    color: #FBFBFB;
+    font-size: 80px;
+    margin-top: 270px;
+    margin-left: 580px;
+}
+
+.cont_link2{
+    position: absolute;
+    color: #FBFBFB;
+    font-size: 80px;
+    margin-top: 390px;
+    margin-left: 580px;
+}
+
+.cont_link3{
+    position: absolute;
+    color: #FBFBFB;
+    font-size: 80px;
+    margin-top: 520px;
+    margin-left: 580px;
+}
+
+
+
+.cont{
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 200px;
+}
+
+.whatsup{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 580px;
+    cursor: pointer;
+}
+
+.telegram{
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 580px;
+    cursor: pointer;
+}
+
+.instagram{
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 580px;
+    cursor: pointer;
+}
+
+.block1{
+    position: absolute;
+    margin-top: 270px;
+    margin-left: 740px;
+    cursor: pointer;
+}
+
+.block2{
+    position: absolute;
+    margin-top: 390px;
+    margin-left: 740px;
+    cursor: pointer;
+}
+
+.block3{
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 740px;
+    cursor: pointer;
+}
+
+.up{
+    font-size: 50px;
+    color: #fbfbfb;
+    margin-left: 1615px;
+    margin-top: 390px;
+}
+
+.up:after{
+        content: "";
+        display: block;
+        width: 250px;
+        height: 4px;
+        background-color: #fbfbfb;
+        margin: 15px -50px;
+}
