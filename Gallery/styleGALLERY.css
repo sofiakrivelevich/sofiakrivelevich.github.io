@@ -62,6 +62,10 @@ footer :hover {
   color:#ff7474;
 }
 
+.button{
+    display: none;
+}
+
 .container {
     background:#FFFAFA;
     margin:20px auto;
