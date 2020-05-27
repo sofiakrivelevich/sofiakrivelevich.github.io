@@ -586,7 +586,7 @@ margin-left: 30px;
     position: absolute;
     width: 5vw;
     height: 0.5vw;
-    background-color: #333;
+    background-color: #fff;
   
     transition: background-color 0.4s ease-in;
   }
@@ -601,7 +601,7 @@ margin-left: 30px;
   
     width: 5vw;
     height: 0.5vw;
-    background-color: #333;
+    background-color: #ffffff;
   
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
    }
@@ -614,7 +614,7 @@ margin-left: 30px;
   
     width: 5vw;
     height: 0.5vw;
-    background-color: #333;
+    background-color: #ffffff;
   
     transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
    }
@@ -660,6 +660,7 @@ margin-left: 30px;
     font-family: EB Garamond;
     font-size: 7vw;
     font-weight: 600;
+    color: #333333;
   }
   
   .mobile_nav_list{
