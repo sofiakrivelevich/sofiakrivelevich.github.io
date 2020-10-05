@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <title>Лабораторная работа №6</title>
+</head>
+<body>
+    <form class="form1">  
+        Обращение
+        <input type="radio" name="sex" value="male">Г-н
+        <input type="radio" name="sez" value="female">Г-жа
+        <br><br>Имя <input type="text" name="firstname" placeholder="София">
+        <br><br>Фамилия <input type="text" name="lastname" placeholder="Кривелевич">
+        <br><br>Email <input type="text" name="email" placeholder="email@address.com">
+        <br><br>Телефон <input type="text" name="tel" placeholder="+375291234567">
+        <br><br>Пароль <input type="password" name="password">
+        <br><br>Подтвердите пароль <input type="password" name="password">
+        <br><br>Страна 
+        <select>
+            <option>Беларусь</option>
+            <option>Россия</option>
+            <option>Литва</option>
+            <option>Латвия</option>
+            <option>Польша</option>
+            <option>Украина</option>
+        </select>
+        <br><br><input type="checkbox" name="rule"> Я согласен с <a href="#">условиями использования</a>
+        <br><br><input type="submit" name="end" value="Зарегистрироваться">
+    </form>
+
+    <form class="form2">
+        <p>Кто вам больше нравится?</p> 
+        <div class="pet"><input type="radio" name="pet" value="cat">Кошки
+        <input type="radio" name="pet" value="dog">Собаки</div>
+        <p>Почему вы предпочитаете тех или иных?</p>
+        <textarea></textarea>
+        <p>Есть ли у вас питомец?</p>
+        <select>
+            <option>Да,собака</option>
+            <option>Да,кошка</option>
+            <option>Да,но другое животное</option>
+            <option>Нет, но очень хочу завести</option>
+            <option>Нет, и не хочу заводить</option>
+        </select>
+        <br><br><input type="submit" name="end" value="Проголосовать!">
+    </form>
+</body>
+</html>

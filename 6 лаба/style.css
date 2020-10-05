@@ -1,0 +1,40 @@
+.form1{
+    margin-bottom: 40px;
+}
+
+.form2{
+    background: url(CatAndDog.jpg);
+    background-repeat: no-repeat;
+    height: 350px;
+    padding-top: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+p{
+    color: #ffffff;
+    font-size: 20px;
+}
+
+textarea{
+    width: 345px;
+    height: 50px;
+}
+
+.pet{
+    font-size: 17px;
+    color: #ffffff;
+}
+
+.form2 [type="submit"]{
+    background-color: #3FC1C9;
+    border: 1px solid #ffffff;
+    font-size: 18px;
+    color: #ffffff;
+    margin: auto;
+}
+
+.submit2{
+    position: absolute;
+}
+
