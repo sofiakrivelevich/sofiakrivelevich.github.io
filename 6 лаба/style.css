@@ -1,13 +1,19 @@
+body{
+    background: linear-gradient(#DEFCF9, #BAD7DF);
+}
+
 .form1{
-    margin-bottom: 40px;
+    display: block;
+    width: 350px;
+    margin: 0 auto 40px;
 }
 
 .form2{
-    background: url(CatAndDog.jpg);
-    background-repeat: no-repeat;
-    height: 350px;
-    padding-top: 15px;
-    padding-left: 20px;
+    background: url(CatAndDog.jpg) center center no-repeat;
+    background-size: cover;
+    width: 400px;
+    margin: 0 auto;
+    padding: 15px 0 20px 20px;
     position: relative;
 }
 
@@ -27,14 +33,16 @@ textarea{
 }
 
 .form2 [type="submit"]{
-    background-color: #3FC1C9;
+    background-color: #BAD7DF;
     border: 1px solid #ffffff;
     font-size: 18px;
-    color: #ffffff;
-    margin: auto;
+    color: #333333;
+    display: block;
+    margin: 0 auto;
 }
 
-.submit2{
-    position: absolute;
+textarea{
+    resize: none;
 }
+
 
