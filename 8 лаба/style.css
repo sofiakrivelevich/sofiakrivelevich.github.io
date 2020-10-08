@@ -26,12 +26,13 @@ a{
     color: #333333;
 }
 
-a:hover{
+.item:hover img{
+    box-shadow: 1px 1px 60px #f8c60f;
+}
+
+.item:hover a{
     color: #4c6088;
     font-size: 32px;
     text-shadow: 1px 1px 1px black;
 }
 
-img:hover{
-    box-shadow: 1px 1px 60px #f8c60f;
-}
