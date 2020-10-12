@@ -13,6 +13,7 @@ body{
     padding: 10px;
     background: #f1d5a7 ;
     margin-top: 15px;
+    border-radius: 10px;
 }
 
 .text{
@@ -34,5 +35,18 @@ a{
     color: #4c6088;
     font-size: 32px;
     text-shadow: 1px 1px 1px black;
+}
+
+.verse{
+    font-size: 23px;
+    margin-top: 20px;
+    font-style: italic;
+    color: #1a2c42;
+    font-weight: 600;
+}
+
+p{
+    font-style: normal;
+    font-weight: 300;
 }
 
