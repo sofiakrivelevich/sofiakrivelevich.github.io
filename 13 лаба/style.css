@@ -133,6 +133,10 @@ span{
     color: #3F484D;
     text-decoration: none;
     }
+
+    .quote a:hover{
+        text-decoration: underline;
+    }
     .quote footer {
     margin-bottom: 1em;
     }
