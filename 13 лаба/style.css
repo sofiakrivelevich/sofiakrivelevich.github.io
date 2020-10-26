@@ -1,0 +1,141 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    background: #fdeaea;
+}
+
+.friends{
+    margin: 30px -15px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.friends_item{
+    width: 22%;
+    padding: 0 15px;
+}
+
+.friends_item_1{
+    width: 22%;
+    padding: 0 15px;
+    margin-top: 4%;
+}
+
+.friends_inner{
+    position: relative;
+    background-color: #808080;
+}
+
+.friends_inner:hover .friends_image{
+transform: translate3d(-10px,-10px,0);
+}
+
+.friends_inner:hover .friends_image img{
+    opacity: 0.3;
+}
+
+.friends_inner:hover .friends_fact{
+    opacity: 1;
+}
+
+.friends_image{
+    background: linear-gradient(to bottom, #fdd7d7,#fae7e7);
+
+    transition: transform 0.2s linear;
+}
+
+
+.friends_image img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transition: opacity 0.1s linear;
+}
+
+.friends_fact{
+    width: 100%;
+    font-size: 18px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    z-index: 2;
+    transform: translate3d(0, -50%, 0)
+
+    transition: opacity 0.2s linear;
+}
+
+.fact_item{
+    width: inherit;
+    height: 70px;
+    padding: 5px 10px;
+    background-color: #5e5a5a;
+    border: 1px solid #333333;
+    transition: background 0.1s linear, color o.1s linear;
+    transform: translate3d(-10px,-10px,0);
+}
+
+
+.fact_item:hover{
+  background-color: #7C7575;
+  color: #fff;  
+}
+
+span{
+    font-size: 15px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    line-height: 1px;
+    font-style: italic;
+}
+
+.quote {
+    width: 60%;
+    margin: 30px auto 0;
+    background: #e2caca;
+    padding: 40px;
+    color: #3F484D;
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    }
+
+    .quote:before, .quote:after {
+    font-size: 45px;
+    color: #FF2E63;
+    position: absolute;
+    height: 2px;
+    left: 40px;
+    right: 40px;
+    line-height: .5;
+    background: linear-gradient(to right, #FF2E63 45%, transparent 45%, transparent), linear-gradient(to right, transparent, transparent 55%, #FF2E63 55%);
+    font-family: serif;
+    }
+
+    .quote:before {
+    content: "\201C";
+    top: 30px;
+    }
+    .quote:after {
+    content: "\201D";
+    bottom: 30px;
+    }
+    .quote a {
+    font-size: 20px;
+    color: #3F484D;
+    text-decoration: none;
+    }
+    .quote footer {
+    margin-bottom: 1em;
+    }
+    .quote cite {
+    font-style: normal;
+    }
