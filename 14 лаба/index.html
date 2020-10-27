@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <title>Лабораторная работа №14</title>
+
+    <style>
+        body{
+    background-color: #FFD3B6;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: #50435c;
+    margin-bottom: 0;
+}
+
+.text{
+    font-family: 'Piazzolla', serif;
+    text-align: center;
+    font-size: 25px;
+}
+
+.animal_container{
+    margin-top: 30px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.animal{
+  display: block;
+    padding: 15px;
+    width: 300px;
+    margin: 0 30px 30px;
+    border-radius: 10px;
+    transition: all  .2s ease-out;
+    box-shadow: 10px 4px 39px -10px rgba(0,0,0,0.75);
+    background-color: #ffffff;
+}
+
+.animal_img{
+    margin-bottom: 10px;
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.animal_img img{
+    height: 100%;
+    width: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.animal:hover{
+    transform: scale(1.05);
+}
+
+p{
+    text-align: center;
+    font-size: 28px;
+    padding-top: 10px;
+    color: #7e4152;
+}
+
+p:hover{
+    color: #ce728c;
+    font-size: 30px;
+}
+
+#Also_Animal{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #ffbcb8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    display: block;
+    padding: 20px 20px 0;
+}
+
+.item img{
+    border-radius: 20px;
+}
+
+.item:hover{
+    transform: scale(1.05);
+}
+
+    </style>
+</head>
+<body>
+    <h1>Детеныши животных</h1>
+    <p class="text">Нет на свете ничего милее, чем недавно увидевшие свет животные</p>
+    <div class="animal_container">
+        <div class="animal">
+            <div class="animal_img">
+                <img src="Бегемотик.jpg">
+            </div>
+            <p>Бегемотик</p>
+        </div>
+        <div class="animal">
+            <div class="animal_img">
+                <img src="Жирафенок.jpg">
+            </div>
+            <p>Жирафенок</p>
+        </div>
+        <div class="animal">
+            <div class="animal_img">
+                <img src="Слоненок.jpg">
+            </div>
+            <p>Слоненок</p>
+        </div>
+        <div class="animal">
+            <div class="animal_img">
+                <img src="Утенок.jpg">
+            </div>
+            <p>Утенок</p>
+        </div>
+        <div class="animal">
+            <div class="animal_img">
+                <img src="Олененок.jpg">
+            </div>
+            <p>Олененок</p>
+        </div>
+        <div class="animal">
+            <div class="animal_img">
+                <img src="Детеныш панды.jpg">
+            </div>
+            <p>Детеныш панды</p>
+        </div>
+        <div class="animal">
+            <div class="animal_img">
+                <img src="Барашек.jpg">
+            </div>
+            <p>Барашек</p>
+        </div>
+        <div class="animal">
+            <div class="animal_img">
+                <img src="Совенок.jpg">
+            </div>
+            <p>Совенок</p>
+        </div>
+        <div class="animal">
+            <div class="animal_img">
+                <img src="Жеребенок.jpg">
+            </div>
+            <p>Жеребенок</p>
+        </div>
+    </div>
+    <div id="Also_Animal">
+        <div class="item"><img src="Детеныш 1.jpg"></div>
+        <div class="item"><img src="Детеныш 2.jpg"></div>
+    </div>
+</body>
+</html>
