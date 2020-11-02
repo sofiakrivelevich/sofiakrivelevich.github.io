@@ -1,0 +1,209 @@
+.block img{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.header{
+    position: absolute;
+    height: 100vh;
+    line-height: 100vh;
+    z-index: 1;
+    right: 20px;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+}
+
+.header span{
+    padding: 7px;
+    border: 2px solid #333333;
+}
+
+.header span:hover{
+    background-color: #ec5716;
+    color: #ffffff;
+    border: 0;
+    transition: width .5s ease-in-out;
+}
+
+.first_block p{
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+    font-size: 25px;
+}
+
+.first_theme{
+    top: 55%;
+}
+
+.second_theme{
+    top: 62%;
+}
+
+.third_theme{
+    top: 69%;
+}
+
+.first_theme a, .second_theme a, .third_theme a{
+    text-decoration: none;
+    color: #333333;
+}
+
+.first_block p:hover{
+    cursor: pointer;
+}
+
+.first_block p:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 100%;
+    margin: 2px;
+    left: 50%;
+    position: absolute;
+    transition: width .5s ease-in-out;
+    transform: translateX(-50%);
+    background-color: #333333;
+}
+
+.first_block p:hover:after  {
+    width: 50%;
+    background-color: #ec5716;
+}
+
+.tips{
+    position: absolute;
+}
+
+h1, h2, h3{
+    position: absolute;
+    z-index: 1;
+    font-size: 30px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    left: 50%; 
+}
+
+h1, h3{
+    color: #ffffff;
+}
+
+h1{
+    margin-left:-15%;
+}
+
+h2{
+    color: #333333;
+    margin-left:-15%;
+}
+
+h3{
+    margin-left:-20%;
+}
+
+h1:after, h2:after, h3:after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 80%;
+    margin: 10px;
+    left: 50%;
+    position: absolute;
+    transition: width .5s ease-in-out;
+    transform: translateX(-50%);
+}
+
+h1:after, h3:after{
+    background-color: #ffffff;
+}
+
+h2:after{
+    background-color: #333333;
+}
+
+h1:hover, h2:hover, h3:hover{
+    color: #ec5716;
+    transition: width .5s ease-in-out;
+}
+h1:hover:after, h2:hover:after, h3:hover:after,
+h1:focus:after, h2:focus:after, h3:focus:after  {
+    width: 20%;
+    background-color: #ec5716;
+}
+
+.tips, .tips_white{
+    position: absolute;
+    z-index: 1;
+    width: 37%;
+    margin-top: 15%;
+}
+
+.tips{
+    margin-left: 10%;
+}
+
+.tips_white{
+    margin-left: 60%;
+}
+
+.tip, .tip_white {
+    margin: 0;
+    counter-reset: li;
+    list-style: none;
+    padding: 10px;
+  }
+
+  .tip>li,  .tip_white>li {
+    position: relative;
+    margin: 0 0 10px 2em;
+    padding: 4px 8px;
+    border-top: 2px solid #787A77;
+    transition: .3s linear;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  .tip>li{
+    color: #ffffff;
+  }
+
+  .tip_white>li{
+    color: #333333;
+  }
+
+  .tip>li:last-child, .tip_white>li:last-child {margin-bottom: 0;}
+  .tip>li:before, .tip_white>li:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    top: -2px;
+    left: -2em;
+    width: 2em;
+    box-sizing: border-box;
+    margin-right: 8px;
+    padding: 4px;
+    border-top: 2px solid #787A77;
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    background: #787A77;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    transition: .3s linear;
+  }
+  .tip>li:hover,   .tip_white>li:hover {
+      border-top: 2px solid #ec5716;
+      margin-left: 20px;
+    }
+  .tip>li:hover:before,  .tip_white>li:hover:before {
+    border: 2px solid #ec5716;
+    background: #ec5716;
+  }
+
+  i{
+      margin-left: 10px;
+      font-size: 25px;
+  }
