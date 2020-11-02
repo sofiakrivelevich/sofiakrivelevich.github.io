@@ -153,8 +153,6 @@ h1::after{
 }   
 
 .facts_Darina li:hover {
-    font-size: 30px;
-    margin-left: 20px;
     text-decoration: underline;
     transition: .2s ease-in-out;
 }   
@@ -204,8 +202,6 @@ h1::after{
   .facts_Ulyana li:hover:before{box-shadow: 0 0 0 10px rgba(185, 185, 185, 0.2)}
   
   .facts_Ulyana li:hover {
-    font-size: 30px;
-    margin-left: 20px;
     text-decoration: underline;
 } 
 
