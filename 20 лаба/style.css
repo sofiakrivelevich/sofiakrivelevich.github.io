@@ -64,9 +64,6 @@ button a{
 
 button:hover{
     background-color: #272626;
-}
-
-button a:hover{
     color: #ffffff;
     text-decoration: underline;
 }
