@@ -1,0 +1,55 @@
+<!DOCTYPE html> <!--узел документа-->
+<html lang="en"> <!--корневой элемент-->
+<head> <!--узел элемента-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <title>
+        Лабораторная работа №20, задание 1 <!--текстовый узел-->
+    </title><!--узел элемента-->
+</head>
+<body> <!--узел элемента-->
+    <h1> 
+        Lovely Dogs
+    </h1> <!--узел элемента-->
+    <script>
+        let i = 0;
+        document.getElementsByTagName("h1")[0].onclick = function change1(){
+            let change=document.getElementsByTagName("h1");
+            if(i%2===0){
+                change[0].innerHTML="Siberian Husky";
+            }
+            else {
+                change[0].innerHTML="Lovely Dogs";
+            }
+            ++i;
+        }
+    </script>
+    <img src="title.gif" alt="" width="150px"> <!--узел элемента-->
+    <p> <!--узел элемента-->
+        Due to their beauty, Siberian Huskies are one  <!--текстовый узел-->
+        of the most wrongly purchased breeds around. 
+        Many do not take into consideration their 
+        temperaments and particular quirks and are 
+        often left with an unruly, albeit beautiful, dog. 
+        Many Siberian Huskies are either lost, killed, 
+        or given to shelters due to uninformed owners. 
+        If you are thinking of purchasing a Siberian Husky, 
+        take a lot of time learning about the breed. 
+        Visit some Siberian Husky breeders or shelter dogs,
+        read books, talk to other owners and possibly 
+        foster if you feel you can. If after all your 
+        experiences, you feel you still want a Siberian 
+        Husky, take the time to decide on whether you 
+        should adopt a rescue or a puppy. Follow your 
+        breeder's advice and remember that this beautiful
+        dog will make your life an adventure and not 
+        always a good one.
+        <br>
+        <button> <!--узел элемента-->
+            <a href="https://dogtime.com/dog-breeds/siberian-husky#/slide/1" target="_blank"> <!--a-узел элемента, href-узел атрибута-->
+                Learn more <!--Текстовый узел-->
+            </button>
+    </p>
+</body>
+</html>
