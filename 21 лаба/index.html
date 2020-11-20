@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <title>Лабораторная работа №21</title>
+    <script>
+        let string_1="Доброе утро";
+        let string_2=",";
+        let string_3="Дмитрий Витальевич!";
+        console.log(string_1.concat(' ',string_2,string_3));
+    </script>
+</head>
+<body onload="startTime()">
+    <div class="content">
+        <div class="clock">
+            <span id="time_1"></span>
+            <span class="separator">:</span>
+            <span id="time_2"></span>
+            <span class="separator">:</span>
+            <span id="time_3"></span>
+            <p>Время, необходимое любому человеку, чтобы 
+                <br>
+                по настоящему выспаться, – это на пять минут больше.</p>
+        </div>
+    </div>
+    <script>
+        function startTime() {
+  let today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  h = checkTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time_1').innerHTML =h;
+  document.getElementById('time_2').innerHTML =m;
+  document.getElementById('time_3').innerHTML =s;
+  let t = setTimeout(startTime, 1000);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+    </script>
+
+
+<div class="content_2">
+            <div class="animal">
+                <div class="animal_img">
+                    <img src="енотик.jpg" onClick="myWindowOpen()">
+                </div>
+            </div>
+            <div class="animal">
+                <div class="animal_img">
+                    <img src="кот.jpg" onClick="myWindowOpen_2()">
+                </div>
+            </div>
+            <div class="animal">
+                <div class="animal_img">
+                    <img src="хаски.jpg" onClick="myWindowOpen_3()">
+                </div>
+            </div>
+            <div class="animal">
+                <div class="animal_img">
+                    <img src="панда.jpg" onClick="myWindowOpen_4()">
+                </div>
+            </div>
+        </div>
+
+           <script>
+                let myWindow;
+                function myWindowOpen() {
+                 myWindow = window.open("енотик.gif", 'myWindow', "width=450, height=250");
+                }
+
+                function myWindowOpen_2() {
+                 myWindow = window.open("котик.gif", 'myWindow', "width=400, height=250");
+                }
+
+                function myWindowOpen_3() {
+                 myWindow = window.open("хаски.gif", 'myWindow', "width=400, height=250");
+                }
+
+                function myWindowOpen_4() {
+                 myWindow = window.open("панды.gif", 'myWindow', "width=450, height=250");
+                }
+            </script>
+
+</div>
+
+
+
+</body>
+</html>
