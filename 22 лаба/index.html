@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen">
+    <title>Лабораторная работа №22</title>
+</head>
+<body onload="startTime()">
+    <div class="content">
+        <div class="clock">
+            <span id="time_1"></span>
+            <span class="separator">:</span>
+            <span id="time_2"></span>
+            <span class="separator">:</span>
+            <span id="time_3"></span>
+        </div>
+    <script>
+        function startTime() {
+  let today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  h = checkTime(h);
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('time_1').innerHTML =h;
+  document.getElementById('time_2').innerHTML =m;
+  document.getElementById('time_3').innerHTML =s;
+  let t = setTimeout(startTime, 1000);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};
+  return i;
+}
+    </script>
+
+
+<div class="browser">
+<button onclick="myFunction()">Сlick to find out the browser version</button>
+
+<script>
+ function myFunction() { 
+     if((navigator.userAgent.indexOf("Opera") || navigator.userAgent.indexOf('OPR')) != -1 ) 
+    {
+        alert('Opera');
+    }
+    else if(navigator.userAgent.indexOf("Chrome") != -1 )
+    {
+        alert('Chrome');
+    }
+    else if(navigator.userAgent.indexOf("Safari") != -1)
+    {
+        alert('Safari');
+    }
+    else if(navigator.userAgent.indexOf("Firefox") != -1 ) 
+    {
+         alert('Firefox');
+    }
+    else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+    {
+      alert('IE'); 
+    }  
+    else 
+    {
+       alert('unknown');
+    }
+    }
+    </script>
+</div>
+
+
+<div class="array">
+    <button onclick="Arr_Function()">Array</button>
+
+
+<script>
+    function Arr_Function(){
+        let size = prompt("Enter array size:", "");
+        size = parseInt(size);
+        let arr = new Array(size);
+    for (let i=0; i<arr.length; i++){
+        arr[i]=prompt("Enter arr["+i+"]:", "");
+    }
+    alert("Массив: "+arr.join(", "));
+    }
+</script>
+</div>
+
+<div class="Minimun">
+    <button onclick="Min_Function()">MInimum</button>
+
+    <script>
+        function Min_Function(){
+            let a=prompt("Enter the first number:","");
+        a = parseInt(a);
+        let b=prompt("Enter the first number:","");
+        b = parseInt(b);
+        let c = Math.min(a,b);
+        alert("Minimum is "+c);
+        }
+    </script>
+</div>
+
+<div class="Power">
+    <button onclick="Pow_Function()">Power</button>
+
+    <script>
+        function Pow_Function(){
+        let a=prompt("Enter the number:","");
+        a = parseInt(a);
+        let b=prompt("Power:","");
+        b = parseInt(b);
+        let c = Math.pow(a,b);
+        alert("Result is "+c);
+        }
+    </script>
+</div>
+
+<img src="image.gif" alt="" width="100px">
+
+    </div>
+
+</body>
+</html>
