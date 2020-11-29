@@ -98,16 +98,13 @@ h3{
     font-size: 30px;
 }
 
-.first_country:hover{
-    transform: scale(1.07);
-}
-
 .first_country:hover img{
     opacity: 0.3;
 }
 
 .first_country:hover ul{
     opacity: 1;
+    transition : all .2s linear
 }
 
 
