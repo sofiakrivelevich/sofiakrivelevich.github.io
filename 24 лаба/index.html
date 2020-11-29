@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<title>Лабораторная работа №24</title>
+</head>
+<body>
+    <div class="content">
+        <div class="first_block">
+            <h1>New year
+                <span
+                   class="txt-rotate"
+                   data-period="2000"
+                   data-rotate='[ "is coming!!!"]'></span>
+              </h1>
+
+
+
+              <script>
+                var TxtRotate = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+    };
+    
+    TxtRotate.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+    
+      if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+    
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+    
+      var that = this;
+      var delta = 300 - Math.random() * 100;
+    
+      if (this.isDeleting) { delta /= 2; }
+    
+      if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+      }
+    
+      setTimeout(function() {
+        that.tick();
+      }, delta);
+    };
+    
+    window.onload = function() {
+      var elements = document.getElementsByClassName('txt-rotate');
+      for (var i=0; i<elements.length; i++) {
+        var toRotate = elements[i].getAttribute('data-rotate');
+        var period = elements[i].getAttribute('data-period');
+        if (toRotate) {
+          new TxtRotate(elements[i], JSON.parse(toRotate), period);
+        }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
+      document.body.appendChild(css);
+    };
+            </script>
+        </div>
+
+        <div class="second_block">
+            <h2>How New Year is celebrated in different countries?</h2>
+            <div class="countries">
+            <div class="first_country">
+                <img src="Italy.jpg" alt="">
+                <ul><h3>New Year in Italy</h3>
+                    <li>Italian Santa Claus is Babbo Natale</li>
+                    <li>It is customary to throw old things out of the windows</li>
+                    <li>Dinners may include meals such as Cotechino (Italian sausage) and Lenticchie (lentils)</li>
+                </ul>
+            </div>
+            <div class="first_country">
+                <img src="Spain.jpg" alt="">
+                <ul><h3>New Year in Spain</h3>
+                  <li>At midnight people eat doce uvas (twelve grapes), one at each stroke of the clock</li>
+                  <li>There is a tradition in Spain to host a children’s parade on
+                    January 5 or Día de los Reyes Magos (Three Kings Day). </li>
+                  <li>In main cities people congregate in the plaza central (main square)</li>
+              </ul>
+            </div>
+            <div class="first_country">
+                <img src="Brazil.jpg" alt="">
+                <ul><h3>New Year in Brazil</h3>
+                  <li>Brazil’s New Year falls on the ‘Festa de Lemanjá’, a spiritual festival that honours the goddess of the sea</li>
+                  <li>In Drazil jumping seven waves will bring good luck in the coming year</li>
+                  <li>It is traditional to gather on the sands of Copacabana beach to see the sun rise – before going home to sleep for the whole day</li>
+              </ul>
+            </div>
+            <div class="first_country">
+                <img src="Japan.jpg" alt="">
+                <ul><h3>New Year in Japan</h3>
+                  <li>Homes and entrance gates are decorated with ornaments made of pine, bamboo and plum trees</li>
+                  <li>It is a tradition to visit a shrine or temple</li>
+                  <li>Toshikoshi soba is eaten on the eve of New Years, while ozoni and osechi are enjoyed the actual day of</li>
+              </ul>
+            </div>
+            <div class="first_country">
+                <img src="china.jpg" alt="">
+                <ul><h3>New Year in China</h3>
+                  <li>Each time the New Year in China falls on different dates of the usual Gregorian calendar, between January 21 and February 20</li>
+                  <li>A year of the Ox will start on February 12th</li>
+                  <li>Red is the main color for the festival, as red is believed to be an auspicious color</li>
+              </ul>
+            </div>
+            <div class="first_country">
+                <img src="Scotland.jpg" alt="">
+                <ul><h3>New Year in Scotland</h3>
+                  <li>The first person who crosses a threshold of a home in the New Year should carry a gift for luck</li>
+                  <li>One of the most spectacular fire ceremonies that takes place today is held in Stonehaven</li>
+                  <li>The Highland custom of saining (or blessing) the house and livestock goes far back in time, but is still practised today in some households</li>
+              </ul>
+            </div>
+        </div>
+        </div>
+
+    
+    </div>
+</body>
+</html>
