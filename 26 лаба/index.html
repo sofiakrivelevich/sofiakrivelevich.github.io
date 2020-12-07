@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Лабораторная работа №26</title>
+</head>
+<body>
+    <div class="first_block">
+        <div class="nav">
+            <ul>
+                <li><a class="nav_link" href="#">Главная</a></li>
+                <li><a class="nav_link" href="#">О фильме</a>
+                    <ul>
+                        <li><a class="nav_link" href="#about">Часть 1</a></li>
+                        <li><a class="nav_link" href="#">Часть 2</a></li>
+                    </ul>
+                </li>  
+                <li><a class="nav_link" href="#actors">Актерский состав</a></li>
+                <li><a class="nav_link" href="#">2 часть фильма</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="second_block">
+        <a name="about">
+        <h1>Собачья жизнь-1 часть</h1>
+        <p>Сюжет фильма «собачья жизнь» знакомит нас восьми 
+            летним Итаном, живущий на ферме с родителями и псом Бейли которого 
+            подарили парню на день рождения. Итан очень любил свою собаку, 
+            всегда ее брал с собой и был готов проводить с ней время с утра до вечера. 
+            Хоть Бейли и не может разговорить на человеческом языке, зато он умеет думать, 
+            как настоящий человек. Шли года Итан взрослел, а его пес все так же был его 
+            лучшим другом, который помогал ему во всем. Однако время не щадило никого и 
+            с годами Бейли начал стареть. В один прекрасный момент пришло его время, но 
+            пес не унывал ведь именно он познакомил Итана с прекрасной девушкой его мечты 
+            по именно Ханна. И вот глаза Бейли закрылись, но как оказалось не на долго душа 
+            пса переродилась в теле овчарки. Его новым хозяином стал молодой полицейский, 
+            которому любимец помогал в различных расследованиях. Спустя время жизненный цикл
+             Бейли снова прерывается, а затем снова возрождается в новом теле проживает 
+             счастивую жизнь и снова умирает, и снова возрождается и еще раз и еще. 
+             Он дарит радость своим новым хозяевам до того мгновенья пока снова не встречает 
+             своего первого хозяин. К тому времени Итан уже постарел и его жизнь совсем не та 
+             что была раньше. у него возникли проблемы с алкоголем, и он стал социопатом. 
+             Но больше всего Бейли возмутило то, что Итан и Ханна не были вдвоем. 
+             Получится ли у бывшего питомца помочь своему другу в такой сложной ситуации?</p>
+            </a>
+    </div>
+
+    <div class="third_block">
+
+        <a name="actors">
+        <div class="actors">
+            
+
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Актерский состав</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="https://www.kinopoisk.ru/name/1134/" target="_blank">Люк Кирби</a>
+                  <a href="https://www.kinopoisk.ru/name/3545583/" target="_blank">Кей Джей Апа</a>
+                  <a href="https://www.kinopoisk.ru/name/388089/" target="_blank">Бритт Робертсон</a>
+                  <a href="https://www.kinopoisk.ru/name/32372/" target="_blank">Майкл Бофшевер</a>
+                  <a href="https://www.kinopoisk.ru/name/750834/" target="_blank">Джульет Райлэнс</a>
+                </div>
+              </div>
+
+
+              <script>
+
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+
+              </script>
+
+            
+        </div>
+    </a>
+    </div>
+
+    <div class="photos">
+            <div class="photo">
+            <div class="item">
+                <img src="1.jpg" alt="" >
+            </div>
+            <div class="item">
+                <img src="2.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="3.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="4.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="5.jpg" alt="">
+            </div>
+            <div class="item">
+                <img src="6.jpg" alt="">
+            </div>
+        </div>
+
+
+
+
+
+
+    </div>
+</body>
+</html>
