@@ -98,7 +98,7 @@ ul {
 
     .second_block{
         background-color: #83c1b3;
-        height: 100vh;
+        min-height: 100vh;
     }
 
 
