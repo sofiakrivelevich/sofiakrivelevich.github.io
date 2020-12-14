@@ -15,7 +15,7 @@ document.getElementsByClassName("joke_img")[1].onmouseover = function () {
 
 document.getElementsByClassName("joke_img")[1].onmouseout = function () {
     var a = document.getElementsByClassName("joke_img")[1];
-    a.src = "2.jpg";
+    a.src = "2.jpg"; 
 }
 
 document.getElementsByClassName("joke_img")[2].onmouseover = function () {
