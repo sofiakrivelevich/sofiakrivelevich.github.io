@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Лабораторная работа №27</title>
+</head>
+<body onload="time()">
+
+<div class="content">
+    <div class="clock">
+        <span>
+            <h1>Countdown Clock</h1>
+            <span id="t" style="font-size:50px"></span>
+        </span>
+    </div>
+</div>
+
+    <script type="text/javascript">
+        timeend= new Date();
+        timeend= new Date(2020, 11, 16, 12, 25);
+        function time() {
+            today = new Date();
+            today = Math.floor((timeend-today)/1000);
+            tsec=today%60; today=Math.floor(today/60); if(tsec<10)tsec='0'+tsec;
+            tmin=today%60; today=Math.floor(today/60); if(tmin<10)tmin='0'+tmin;
+            thour=today%24; today=Math.floor(today/24);
+            timestr=today +" day "+ thour+" hours "+tmin+" minutes "+tsec+" seconds";
+            document.getElementById('t').innerHTML=timestr;
+            window.setTimeout("time()",1000);
+        }
+        </script>
+
+        <div class="second_block">
+            <div class="jokes">
+            <div class="joke">
+                <img class="joke_img" src="1.jpg" alt="">
+            </div>
+            <div class="joke">
+                <img class="joke_img" src="2.jpg" alt="">
+            </div>
+            <div class="joke">
+                <img class="joke_img" src="3.jpg" alt="">
+            </div>
+            <div class="joke">
+                <img class="joke_img" src="4.jpg" alt="">
+            </div>
+            <div class="joke">
+                <img class="joke_img" src="5.jpg" alt="">
+            </div>
+            <div class="joke">
+                <img class="joke_img" src="6.jpg" alt="">
+            </div>
+            <div class="joke">
+                <img class="joke_img" src="7.jpg" alt="">
+            </div>
+            <div class="joke">
+                <img class="joke_img" src="8.png" alt="">
+            </div>
+        </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
