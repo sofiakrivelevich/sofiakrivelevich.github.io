@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: #fdddc4;
+    
 }
 
 header{
@@ -229,17 +229,15 @@ ul {
       transform: translate(-50%, -50%);
   }
 
-
-  .contacts{
-      height: 100vh;
-  }
-
   .contact{
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 100vh;
+    background: url(bg.jpg) center center no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .dropbtn {
